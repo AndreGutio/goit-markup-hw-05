@@ -201,8 +201,10 @@ body {
 
 .hero {
   background: #c4c4c4;
-  background-image:
-    linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
     url(../images/hero.jpg);
   background-size: cover;
   padding: 200px 0;
@@ -358,6 +360,7 @@ body {
 .work-list {
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 
 /*.work-item {
@@ -365,6 +368,23 @@ body {
 
 .work-icon {
 }*/
+
+.work-icon-text {
+  position: absolute;
+  bottom: 0;
+  width: 370px;
+  height: 70px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-bg-color);
+  padding: 27px;
+  background: rgba(47, 48, 58, 0.8);
+}
 
 .team {
   background: var(--light-bg-color);
