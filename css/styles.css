@@ -804,8 +804,8 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  transition-property: background-color;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition-property: background-color, visibility, opacity;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -849,7 +849,8 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-close-link {
+.modal-close-btn {
+  cursor: pointer;
   position: absolute;
   top: 8px;
   right: 8px;
